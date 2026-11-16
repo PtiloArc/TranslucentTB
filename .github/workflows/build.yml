@@ -1,0 +1,108 @@
+name: probe-and-build
+
+# 放到 fork 的 .github/workflows/build.yml
+# 手动触发或任意分支推送都会跑
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ '**' ]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-2025-vs2026
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Probe toolchain
+        shell: pwsh
+        continue-on-error: true
+        run: |
+          New-Item -ItemType Directory -Force -Path ci-report | Out-Null
+          $out = @()
+          $out += "=== Visual Studio ==="
+          $vswhere = "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\vswhere.exe"
+          if (Test-Path $vswhere) {
+            $out += (& $vswhere -all -products * -property installationPath)
+            $out += (& $vswhere -all -products * -property catalog_productDisplayVersion)
+          } else { $out += "vswhere not found" }
+          $out += ""
+          $out += "=== vcpkg ==="
+          $out += "VCPKG_INSTALLATION_ROOT=$env:VCPKG_INSTALLATION_ROOT"
+          $out += "vcpkg.json exists: $(Test-Path vcpkg.json)"
+          $out += "slnx exists: $(Test-Path TranslucentTB.slnx)"
+          $out += "vcpkg-configuration.json exists: $(Test-Path vcpkg-configuration.json)"
+          $out += ""
+          $out += "=== NuGet configuration ==="
+          Get-ChildItem -Recurse -Filter NuGet.config -ErrorAction SilentlyContinue | ForEach-Object { $out += "--- $($_.FullName) ---"; $out += (Get-Content $_.FullName -Raw) }
+          $out += ""
+          $out += "=== MSBuild ==="
+          $msb = Get-ChildItem "C:\Program Files\Microsoft Visual Studio" -Recurse -Filter MSBuild.exe -ErrorAction SilentlyContinue |
+                   Where-Object { $_.FullName -match 'Bin\\MSBuild.exe$' } | Select-Object -First 1
+          if ($msb) { $out += $msb.FullName; $out += (& $msb.FullName -version) } else { $out += "MSBuild not found" }
+          $out | Tee-Object -FilePath ci-report\probe.txt
+
+      - name: Integrate vcpkg
+        shell: pwsh
+        continue-on-error: true
+        run: |
+          if (Test-Path "$env:VCPKG_INSTALLATION_ROOT\vcpkg.exe") {
+            & "$env:VCPKG_INSTALLATION_ROOT\vcpkg.exe" integrate install
+          } else { "vcpkg.exe not found at $env:VCPKG_INSTALLATION_ROOT" }
+
+      - name: Cache vcpkg installed
+        uses: actions/cache@v4
+        with:
+          path: vcpkg_installed
+          key: vcpkg-${{ runner.os }}-${{ hashFiles('vcpkg.json') }}
+          restore-keys: vcpkg-${{ runner.os }}-
+
+      - name: Build
+        shell: pwsh
+        run: |
+          $msb = Get-ChildItem "C:\Program Files\Microsoft Visual Studio" -Recurse -Filter MSBuild.exe -ErrorAction SilentlyContinue |
+                   Where-Object { $_.FullName -match 'Bin\\MSBuild.exe$' } | Select-Object -First 1
+          if (-not $msb) { throw "MSBuild not found" }
+          & $msb.FullName "TranslucentTB.slnx" /m /restore /p:RestorePackagesConfig=true /p:Configuration=Release /p:Platform=x64 /p:BuildType=Dev /v:n 2>&1 |
+            Tee-Object -FilePath ci-report\build.txt
+          if ($LASTEXITCODE -ne 0) { throw "MSBuild failed with $LASTEXITCODE" }
+
+      - name: Package portable
+        shell: pwsh
+        continue-on-error: true
+        run: |
+          $script = ".azp\scripts\create-portable.ps1"
+          if (Test-Path $script) {
+            & $script -Platform x64 -Configuration Release -WorkDir "$env:GITHUB_WORKSPACE" -OutputDir "$env:GITHUB_WORKSPACE\out\portable"
+          }
+          New-Item -ItemType Directory -Force -Path out\upload | Out-Null
+          if (Test-Path out\portable) { Copy-Item out\portable\* out\upload\ -Recurse -Force }
+          else {
+            $bin = Get-ChildItem -Path . -Recurse -Filter TranslucentTB.exe -ErrorAction SilentlyContinue |
+                     Where-Object { $_.FullName -match 'x64\\Release' } | Select-Object -First 1
+            if ($bin) { Copy-Item $bin.Directory.FullName out\upload -Recurse -Force }
+          }
+          Get-ChildItem out\upload -Recurse | Select-Object -First 40 FullName | Out-String | Add-Content ci-report\probe.txt
+
+      - name: Upload portable
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: portable-x64-release
+          path: out/upload
+          if-no-files-found: warn
+          retention-days: 3
+
+      - name: Report back into the repo
+        if: always()
+        shell: pwsh
+        run: |
+          git config user.name "ci-probe"
+          git config user.email "ci-probe@users.noreply.github.com"
+          Get-ChildItem ci-report -File -ErrorAction SilentlyContinue | ForEach-Object { "---- $($_.Name) ----"; Get-Content $_.FullName -Tail 80 }
+          git add ci-report -f
+          git commit -m "ci: report $(Get-Date -Format u)" --allow-empty
+          git push || echo "push failed"
