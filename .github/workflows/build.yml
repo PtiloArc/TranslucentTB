@@ -60,15 +60,38 @@ jobs:
           key: vcpkg-${{ runner.os }}-${{ hashFiles('vcpkg.json') }}
           restore-keys: vcpkg-${{ runner.os }}-
 
+      - name: Restore
+        shell: pwsh
+        run: |
+          $msb = Get-ChildItem "C:\Program Files\Microsoft Visual Studio" -Recurse -Filter MSBuild.exe -ErrorAction SilentlyContinue |
+                   Where-Object { $_.FullName -match 'Bin\\MSBuild.exe$' } | Select-Object -First 1
+          if (-not $msb) { throw "MSBuild not found" }
+          & $msb.FullName "TranslucentTB.slnx" -t:Restore -p:Platform=x64 -p:Configuration=Release /v:m 2>&1 |
+            Tee-Object -FilePath ci-report\restore.txt
+          if ($LASTEXITCODE -ne 0) { throw "restore failed with $LASTEXITCODE" }
+
       - name: Build
         shell: pwsh
         run: |
           $msb = Get-ChildItem "C:\Program Files\Microsoft Visual Studio" -Recurse -Filter MSBuild.exe -ErrorAction SilentlyContinue |
                    Where-Object { $_.FullName -match 'Bin\\MSBuild.exe$' } | Select-Object -First 1
           if (-not $msb) { throw "MSBuild not found" }
-          & $msb.FullName "TranslucentTB.slnx" /m /restore /p:RestorePackagesConfig=true /p:Configuration=Release /p:Platform=x64 /p:BuildType=Dev /v:n 2>&1 |
+          # deliberately no /m and no /restore: match upstream VSBuild@1 defaults
+          & $msb.FullName "TranslucentTB.slnx" /p:Configuration=Release /p:Platform=x64 /p:BuildType=Dev /v:m 2>&1 |
             Tee-Object -FilePath ci-report\build.txt
           if ($LASTEXITCODE -ne 0) { throw "MSBuild failed with $LASTEXITCODE" }
+
+      - name: Extract errors
+        if: always()
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force -Path ci-report | Out-Null
+          if (Test-Path ci-report\build.txt) {
+            Select-String -Path ci-report\build.txt -Pattern ': error' |
+              ForEach-Object { $_.Line } | Set-Content ci-report\errors.txt
+            "---- last 120 lines ----" | Add-Content ci-report\errors.txt
+            Get-Content ci-report\build.txt -Tail 120 | Add-Content ci-report\errors.txt
+          } else { "build.txt not found" | Set-Content ci-report\errors.txt }
 
       - name: Package portable
         shell: pwsh
