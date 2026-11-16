@@ -70,6 +70,39 @@ jobs:
             Tee-Object -FilePath ci-report\restore.txt
           if ($LASTEXITCODE -ne 0) { throw "restore failed with $LASTEXITCODE" }
 
+      - name: Apply experimental patch
+        shell: pwsh
+        run: |
+          $p = "ExplorerTAP\visualtreewatcher.cpp"
+          $src = Get-Content $p -Raw
+          $anchor = 'const auto rootGrid = FromHandle<wux::UIElement>(relation.Parent);'
+          $oldIf = 'if (content == rootGrid)'
+          if (-not $src.Contains($anchor)) { throw "anchor 1 not found" }
+          if (-not $src.Contains($oldIf)) { throw "anchor 2 not found" }
+          $t = [char]9
+          $lambda = (@(
+            "",
+            "$t$t$t// 26H2 wraps the taskbar frame in ScrollViewer / ScrollContentPresenter / Border,",
+            "$t$t$t// so the frame's parent is no longer the DesktopWindowXamlSource content.",
+            "$t$t$t// Walk up the ancestor chain instead of assuming a single level.",
+            "$t$t$tconst auto isSameOrAncestor = [](wux::DependencyObject ancestor, wux::DependencyObject node)",
+            "$t$t$t{",
+            "$t$t$t$tfor (auto current = node; current; current = wux::Media::VisualTreeHelper::GetParent(current))",
+            "$t$t$t$t{",
+            "$t$t$t$t$tif (current == ancestor)",
+            "$t$t$t$t$t{",
+            "$t$t$t$t$t$treturn true;",
+            "$t$t$t$t$t}",
+            "$t$t$t$t}",
+            "",
+            "$t$t$t$treturn false;",
+            "$t$t$t};"
+          ) -join "`r`n")
+          $src = $src.Replace($anchor, $anchor + $lambda)
+          $src = $src.Replace($oldIf, 'if (isSameOrAncestor(content, rootGrid))')
+          Set-Content $p $src -NoNewline -Encoding utf8
+          git diff -- ExplorerTAP/visualtreewatcher.cpp | Tee-Object ci-report\patch.txt
+
       - name: Build
         shell: pwsh
         run: |
@@ -97,18 +130,17 @@ jobs:
         shell: pwsh
         continue-on-error: true
         run: |
-          $script = ".azp\scripts\create-portable.ps1"
-          if (Test-Path $script) {
-            & $script -Platform x64 -Configuration Release -WorkDir "$env:GITHUB_WORKSPACE" -OutputDir "$env:GITHUB_WORKSPACE\out\portable"
-          }
+          $src = "AppPackage\bin\x64\Release"
           New-Item -ItemType Directory -Force -Path out\upload | Out-Null
-          if (Test-Path out\portable) { Copy-Item out\portable\* out\upload\ -Recurse -Force }
-          else {
-            $bin = Get-ChildItem -Path . -Recurse -Filter TranslucentTB.exe -ErrorAction SilentlyContinue |
-                     Where-Object { $_.FullName -match 'x64\\Release' } | Select-Object -First 1
-            if ($bin) { Copy-Item $bin.Directory.FullName out\upload -Recurse -Force }
+          if (Test-Path $src) {
+            "==== source: $src ====" | Add-Content ci-report\probe.txt
+            Get-ChildItem $src -Recurse | Select-Object -First 60 FullName | Out-String | Add-Content ci-report\probe.txt
+            Copy-Item "$src\*" -Destination out\upload -Recurse -Force
+          } else {
+            "AppPackage output not found: $src" | Add-Content ci-report\probe.txt
           }
-          Get-ChildItem out\upload -Recurse | Select-Object -First 40 FullName | Out-String | Add-Content ci-report\probe.txt
+          "==== packaged ====" | Add-Content ci-report\probe.txt
+          Get-ChildItem out\upload -Recurse | Select-Object -First 60 FullName | Out-String | Add-Content ci-report\probe.txt
 
       - name: Upload portable
         uses: actions/upload-artifact@v4
