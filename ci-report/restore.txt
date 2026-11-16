@@ -1,0 +1,4 @@
+MSBuild version 17.14.60+43b635718 for .NET Framework
+
+  Determining projects to restore...
+  Restored D:\a\TranslucentTB\TranslucentTB\AppPackage\AppPackage.wapproj (in 5.28 sec).
