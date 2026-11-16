@@ -66,7 +66,7 @@ jobs:
           $msb = Get-ChildItem "C:\Program Files\Microsoft Visual Studio" -Recurse -Filter MSBuild.exe -ErrorAction SilentlyContinue |
                    Where-Object { $_.FullName -match 'Bin\\MSBuild.exe$' } | Select-Object -First 1
           if (-not $msb) { throw "MSBuild not found" }
-          & $msb.FullName "TranslucentTB.slnx" -t:Restore -p:Platform=x64 -p:Configuration=Release /v:m 2>&1 |
+          & $msb.FullName "TranslucentTB.slnx" -t:Restore -p:RestorePackagesConfig=true -p:Platform=x64 -p:Configuration=Release /v:m 2>&1 |
             Tee-Object -FilePath ci-report\restore.txt
           if ($LASTEXITCODE -ne 0) { throw "restore failed with $LASTEXITCODE" }
 
