@@ -13,3 +13,124 @@ D:\a\TranslucentTB\TranslucentTB\ProgramLog\ProgramLog.vcxproj(55,5): error : Th
 D:\a\TranslucentTB\TranslucentTB\WindowsUdk\WindowsUdk.vcxproj(42,5): error : This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is ..\packages\Microsoft.Windows.CppWinRT.2.0.250303.1\build\native\Microsoft.Windows.CppWinRT.props.
 D:\a\TranslucentTB\TranslucentTB\Xaml\Xaml.vcxproj(463,5): error : This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is ..\packages\Microsoft.Build.Tasks.Git.8.0.0\build\Microsoft.Build.Tasks.Git.props.
 D:\a\TranslucentTB\TranslucentTB\Xaml\Xaml.vcxproj(463,5): error : This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is ..\packages\Microsoft.Build.Tasks.Git.8.0.0\build\Microsoft.Build.Tasks.Git.props.
+---- last 120 lines ----
+  messagewindow.cpp
+  trayicon.cpp
+  uwp.cpp
+  window.cpp
+  windowclass.cpp
+  Generating manifest for D:\a\TranslucentTB\TranslucentTB\x64\Release\Xaml\TranslucentTB.Xaml.winmd
+  Generating lib file for api-ms-win-appmodel-runtime-l1-1-5.def
+     Creating library x64\Release\api-ms-win-appmodel-runtime-l1-1-5.lib and object x64\Release\api-ms-win-appmodel-runtime-l1-1-5.exp
+  Generating code
+  Finished generating code
+  TranslucentTB.vcxproj -> D:\a\TranslucentTB\TranslucentTB\x64\Release\TranslucentTB.exe
+  Xaml.vcxproj -> D:\a\TranslucentTB\TranslucentTB\x64\Release\Xaml\Xaml.dll
+  Xaml.vcxproj -> D:\a\TranslucentTB\TranslucentTB\x64\Release\Xaml\Xaml.dll
+  AppPackage -> D:\a\TranslucentTB\TranslucentTB\AppPackage\AppPackages\AppPackage_1.0.0.0_x64_Test\AppPackage_1.0.0.0_x64.msix
+  AppPackage -> obj\x64\Release\Symbols\AppPackage_1.0.0.0_x64.appxsym
+  Installing vcpkg dependencies to D:\a\TranslucentTB\TranslucentTB\Tests\vcpkg_installed\x64-windows\
+  "C:\vcpkg\vcpkg.exe" install  --x-wait-for-lock --triplet "x64-windows" --vcpkg-root "C:\vcpkg\\" "--x-manifest-root=D:\a\TranslucentTB\TranslucentTB\Tests\\" "--x-install-root=D:\a\TranslucentTB\TranslucentTB\Tests\vcpkg_installed\x64-windows\\" 
+  Fetching registry information from https://github.com/microsoft/vcpkg (HEAD)...
+  Detecting compiler hash for triplet x64-windows...
+  Compiler found: C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe
+  The following packages will be built and installed:
+      gtest:x64-windows@1.17.0#2 -- git+https://github.com/microsoft/vcpkg@b8a81820356e90917e5eb5dfe0092bfac57dbb12
+      rapidjson:x64-windows@2025-02-26 -- git+https://github.com/microsoft/vcpkg@4297a243aa0e3ed6c3a4c307579914593da5751d
+    * vcpkg-cmake:x64-windows@2024-04-23 -- git+https://github.com/microsoft/vcpkg@e74aa1e8f93278a8e71372f1fa08c3df420eb840
+    * vcpkg-cmake-config:x64-windows@2024-05-23 -- git+https://github.com/microsoft/vcpkg@97a63e4bc1a17422ffe4eff71da53b4b561a7841
+      wil:x64-windows@1.0.250325.1 -- git+https://github.com/microsoft/vcpkg@254977d7ae1b2a2c086359b0df1373c796538f1d
+  Additional packages (*) will be modified to complete this operation.
+  Restored 4 package(s) from C:\Users\runneradmin\AppData\Local\vcpkg\archives in 123 ms. Use --debug to see more details.
+  Installing 1/5 vcpkg-cmake-config:x64-windows@2024-05-23...
+  vcpkg-cmake-config:x64-windows@2024-05-23 package ABI: 5f792bba831db8eceba36ee7a8942785c8be7ea773b31c8defc1682cc2864308
+  Elapsed time to handle vcpkg-cmake-config:x64-windows: 2.7 ms
+  Installing 2/5 vcpkg-cmake:x64-windows@2024-04-23...
+  vcpkg-cmake:x64-windows@2024-04-23 package ABI: 3e6a6ea2e9304c22e4acf4b382ddeda4f02b54d9659bd252c044a847af8f56ab
+  Elapsed time to handle vcpkg-cmake:x64-windows: 2.84 ms
+  Installing 3/5 gtest:x64-windows@1.17.0#2...
+  gtest:x64-windows@1.17.0#2 package ABI: 9961bdb3220a20f80dba88e678ee4feff1e44afd3f61a9fe292f07caba1bfa56
+  Building gtest:x64-windows@1.17.0#2...
+  C:\Users\runneradmin\AppData\Local\vcpkg\registries\git-trees\b8a81820356e90917e5eb5dfe0092bfac57dbb12: info: installing from git registry git+https://github.com/microsoft/vcpkg@b8a81820356e90917e5eb5dfe0092bfac57dbb12
+  Downloading https://github.com/google/googletest/archive/v1.17.0.tar.gz -> google-googletest-v1.17.0.tar.gz
+  Successfully downloaded google-googletest-v1.17.0.tar.gz
+  -- Extracting source C:/vcpkg/downloads/google-googletest-v1.17.0.tar.gz
+  -- Applying patch 001-fix-UWP-death-test.patch
+  -- Applying patch clang-tidy-no-lint.patch
+  -- Applying patch fix-main-lib-path.patch
+  -- Using source at C:/vcpkg/buildtrees/gtest/src/v1.17.0-0c449efaff.clean
+  -- Configuring x64-windows
+  -- Building x64-windows-dbg
+  -- Building x64-windows-rel
+  -- Installing: C:/vcpkg/packages/gtest_x64-windows/src/gtest.cc
+  -- Installing: C:/vcpkg/packages/gtest_x64-windows/src/gtest_main.cc
+  -- Installing: C:/vcpkg/packages/gtest_x64-windows/src/gtest-all.cc
+  -- Installing: C:/vcpkg/packages/gtest_x64-windows/src/gtest-assertion-result.cc
+  -- Installing: C:/vcpkg/packages/gtest_x64-windows/src/gtest-death-test.cc
+  -- Installing: C:/vcpkg/packages/gtest_x64-windows/src/gtest-filepath.cc
+  -- Installing: C:/vcpkg/packages/gtest_x64-windows/src/gtest-internal-inl.h
+  -- Installing: C:/vcpkg/packages/gtest_x64-windows/src/gtest-matchers.cc
+  -- Installing: C:/vcpkg/packages/gtest_x64-windows/src/gtest-port.cc
+  -- Installing: C:/vcpkg/packages/gtest_x64-windows/src/gtest-printers.cc
+  -- Installing: C:/vcpkg/packages/gtest_x64-windows/src/gtest-test-part.cc
+  -- Installing: C:/vcpkg/packages/gtest_x64-windows/src/gtest-typed-test.cc
+  -- Fixing pkgconfig file: C:/vcpkg/packages/gtest_x64-windows/lib/pkgconfig/gmock.pc
+  -- Fixing pkgconfig file: C:/vcpkg/packages/gtest_x64-windows/lib/pkgconfig/gmock_main.pc
+  -- Fixing pkgconfig file: C:/vcpkg/packages/gtest_x64-windows/lib/pkgconfig/gtest.pc
+  -- Fixing pkgconfig file: C:/vcpkg/packages/gtest_x64-windows/lib/pkgconfig/gtest_main.pc
+  -- Using cached msys2-mingw-w64-x86_64-pkgconf-1~3.0.7-1-any.pkg.tar.zst
+  -- Using cached msys2-msys2-runtime-3.6.10-4-x86_64.pkg.tar.zst
+  -- Using msys root at C:/vcpkg/downloads/tools/msys2/d5586eb050429df1
+  -- Fixing pkgconfig file: C:/vcpkg/packages/gtest_x64-windows/debug/lib/pkgconfig/gmock.pc
+  -- Fixing pkgconfig file: C:/vcpkg/packages/gtest_x64-windows/debug/lib/pkgconfig/gmock_main.pc
+  -- Fixing pkgconfig file: C:/vcpkg/packages/gtest_x64-windows/debug/lib/pkgconfig/gtest.pc
+  -- Fixing pkgconfig file: C:/vcpkg/packages/gtest_x64-windows/debug/lib/pkgconfig/gtest_main.pc
+  -- Installing: C:/vcpkg/packages/gtest_x64-windows/share/gtest/copyright
+  -- Installing: C:/vcpkg/packages/gtest_x64-windows/share/gtest/usage
+  -- Performing post-build validation
+  Starting submission of gtest:x64-windows@1.17.0#2 to 1 binary cache(s) in the background
+  Elapsed time to handle gtest:x64-windows: 27 s
+  Installing 4/5 rapidjson:x64-windows@2025-02-26...
+  rapidjson:x64-windows@2025-02-26 package ABI: 95ecb0d0edb70b223b853136e1def6352796fe86022fe388b4cc96b1e749eace
+  Elapsed time to handle rapidjson:x64-windows: 9.03 ms
+  Installing 5/5 wil:x64-windows@1.0.250325.1...
+  wil:x64-windows@1.0.250325.1 package ABI: c94c1a87b0b0a4423ea99643350543c468cf4f405296794bc8db3123b1fec8d7
+  Elapsed time to handle wil:x64-windows: 8.36 ms
+  Installed contents are licensed to you by owners. Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
+  Packages installed in this vcpkg installation declare the following licenses:
+  BSD-3-Clause
+  MIT
+  The package gtest is compatible with built-in CMake targets:
+  
+      enable_testing()
+      
+      find_package(GTest CONFIG REQUIRED)
+      target_link_libraries(main PRIVATE GTest::gtest GTest::gtest_main GTest::gmock GTest::gmock_main)
+      
+      add_test(AllTestsInMain main)
+  
+  rapidjson provides CMake targets:
+  
+    # this is heuristically generated, and may not be correct
+    find_package(RapidJSON CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE RapidJSON rapidjson)
+  
+  wil provides CMake targets:
+  
+    # this is heuristically generated, and may not be correct
+    find_package(wil CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE WIL::WIL)
+  
+  Waiting for 1 remaining binary cache submissions...
+  Completed submission of gtest:x64-windows@1.17.0#2 to 1 binary cache(s) in 1.6 s (1/1)
+  All requested installations completed successfully in: 27 s
+  rapidjsonhelper.cpp
+  color.cpp
+  numbers.cpp
+  strings.cpp
+  version.cpp
+  win32.cpp
+  Generating code
+  Finished generating code
+  Tests.vcxproj -> D:\a\TranslucentTB\TranslucentTB\x64\Release\Tests.exe
+  D:\a\TranslucentTB\TranslucentTB\Tests\vcpkg_installed\x64-windows\x64-windows\bin\gmock_main.dll -> D:\a\TranslucentTB\TranslucentTB\x64\Release\gmock_main.dll done

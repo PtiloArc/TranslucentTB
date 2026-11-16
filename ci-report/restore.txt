@@ -1,4 +1,46 @@
 MSBuild version 17.14.60+43b635718 for .NET Framework
 
   Determining projects to restore...
-  Restored D:\a\TranslucentTB\TranslucentTB\AppPackage\AppPackage.wapproj (in 5.28 sec).
+  Restoring NuGet package Microsoft.Trusted.Signing.Client.1.0.95.
+  Restoring NuGet package Microsoft.SourceLink.Common.8.0.0.
+  Restoring NuGet package Microsoft.Build.Tasks.Git.8.0.0.
+  Restoring NuGet package Microsoft.SourceLink.GitHub.8.0.0.
+  Adding package 'Microsoft.SourceLink.GitHub.8.0.0' to folder 'D:\a\TranslucentTB\TranslucentTB\packages'
+  Adding package 'Microsoft.SourceLink.Common.8.0.0' to folder 'D:\a\TranslucentTB\TranslucentTB\packages'
+  Adding package 'Microsoft.Build.Tasks.Git.8.0.0' to folder 'D:\a\TranslucentTB\TranslucentTB\packages'
+  Added package 'Microsoft.SourceLink.GitHub.8.0.0' to folder 'D:\a\TranslucentTB\TranslucentTB\packages'
+  Added package 'Microsoft.SourceLink.Common.8.0.0' to folder 'D:\a\TranslucentTB\TranslucentTB\packages'
+  Restoring NuGet package Microsoft.Windows.SDK.BuildTools.10.0.26100.7463.
+  Restoring NuGet package Microsoft.Windows.SDK.CPP.10.0.26100.7463.
+  Added package 'Microsoft.Build.Tasks.Git.8.0.0' to folder 'D:\a\TranslucentTB\TranslucentTB\packages'
+  Restoring NuGet package Microsoft.Windows.SDK.CPP.arm64.10.0.26100.7463.
+  Adding package 'Microsoft.Trusted.Signing.Client.1.0.95' to folder 'D:\a\TranslucentTB\TranslucentTB\packages'
+  Added package 'Microsoft.Trusted.Signing.Client.1.0.95' to folder 'D:\a\TranslucentTB\TranslucentTB\packages'
+  Restoring NuGet package Microsoft.Windows.SDK.CPP.x64.10.0.26100.7463.
+  Adding package 'Microsoft.Windows.SDK.BuildTools.10.0.26100.7463' to folder 'D:\a\TranslucentTB\TranslucentTB\packages'
+  Added package 'Microsoft.Windows.SDK.BuildTools.10.0.26100.7463' to folder 'D:\a\TranslucentTB\TranslucentTB\packages'
+  Restoring NuGet package Microsoft.Windows.CppWinRT.2.0.250303.1.
+  Adding package 'Microsoft.Windows.CppWinRT.2.0.250303.1' to folder 'D:\a\TranslucentTB\TranslucentTB\packages'
+  Added package 'Microsoft.Windows.CppWinRT.2.0.250303.1' to folder 'D:\a\TranslucentTB\TranslucentTB\packages'
+  Restoring NuGet package GoogleTestAdapter.0.18.0.
+  Adding package 'GoogleTestAdapter.0.18.0' to folder 'D:\a\TranslucentTB\TranslucentTB\packages'
+  Added package 'GoogleTestAdapter.0.18.0' to folder 'D:\a\TranslucentTB\TranslucentTB\packages'
+  Restoring NuGet package Microsoft.UI.Xaml.2.8.7.
+  Adding package 'Microsoft.UI.Xaml.2.8.7' to folder 'D:\a\TranslucentTB\TranslucentTB\packages'
+  Added package 'Microsoft.UI.Xaml.2.8.7' to folder 'D:\a\TranslucentTB\TranslucentTB\packages'
+  Restoring NuGet package Microsoft.Web.WebView2.1.0.3650.58.
+  Adding package 'Microsoft.Web.WebView2.1.0.3650.58' to folder 'D:\a\TranslucentTB\TranslucentTB\packages'
+  Added package 'Microsoft.Web.WebView2.1.0.3650.58' to folder 'D:\a\TranslucentTB\TranslucentTB\packages'
+  Adding package 'Microsoft.Windows.SDK.CPP.x64.10.0.26100.7463' to folder 'D:\a\TranslucentTB\TranslucentTB\packages'
+  Added package 'Microsoft.Windows.SDK.CPP.x64.10.0.26100.7463' to folder 'D:\a\TranslucentTB\TranslucentTB\packages'
+  Adding package 'Microsoft.Windows.SDK.CPP.arm64.10.0.26100.7463' to folder 'D:\a\TranslucentTB\TranslucentTB\packages'
+  Added package 'Microsoft.Windows.SDK.CPP.arm64.10.0.26100.7463' to folder 'D:\a\TranslucentTB\TranslucentTB\packages'
+  Adding package 'Microsoft.Windows.SDK.CPP.10.0.26100.7463' to folder 'D:\a\TranslucentTB\TranslucentTB\packages'
+  Added package 'Microsoft.Windows.SDK.CPP.10.0.26100.7463' to folder 'D:\a\TranslucentTB\TranslucentTB\packages'
+D:\a\TranslucentTB\TranslucentTB\ExplorerHooks\ExplorerHooks.vcxproj : warning NU1902: Package 'Microsoft.Build.Tasks.Git' 8.0.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-23fw-v26w-5fgq [D:\a\TranslucentTB\TranslucentTB\TranslucentTB.slnx]
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj : warning NU1902: Package 'Microsoft.Build.Tasks.Git' 8.0.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-23fw-v26w-5fgq [D:\a\TranslucentTB\TranslucentTB\TranslucentTB.slnx]
+D:\a\TranslucentTB\TranslucentTB\ProgramLog\ProgramLog.vcxproj : warning NU1902: Package 'Microsoft.Build.Tasks.Git' 8.0.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-23fw-v26w-5fgq [D:\a\TranslucentTB\TranslucentTB\TranslucentTB.slnx]
+D:\a\TranslucentTB\TranslucentTB\Tests\Tests.vcxproj : warning NU1902: Package 'Microsoft.Build.Tasks.Git' 8.0.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-23fw-v26w-5fgq [D:\a\TranslucentTB\TranslucentTB\TranslucentTB.slnx]
+D:\a\TranslucentTB\TranslucentTB\TranslucentTB\TranslucentTB.vcxproj : warning NU1902: Package 'Microsoft.Build.Tasks.Git' 8.0.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-23fw-v26w-5fgq [D:\a\TranslucentTB\TranslucentTB\TranslucentTB.slnx]
+D:\a\TranslucentTB\TranslucentTB\Xaml\Xaml.vcxproj : warning NU1902: Package 'Microsoft.Build.Tasks.Git' 8.0.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-23fw-v26w-5fgq [D:\a\TranslucentTB\TranslucentTB\TranslucentTB.slnx]
+  Restored D:\a\TranslucentTB\TranslucentTB\AppPackage\AppPackage.wapproj (in 936 ms).

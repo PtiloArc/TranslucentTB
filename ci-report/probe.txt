@@ -14,3 +14,17 @@ vcpkg-configuration.json exists: False
 C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\MSBuild.exe
 MSBuild version 17.14.60+43b635718 for .NET Framework
 17.14.60.43110
+
+FullName
+--------
+D:\a\TranslucentTB\TranslucentTB\out\upload\Assets
+D:\a\TranslucentTB\TranslucentTB\out\upload\ExplorerHooks.dll
+D:\a\TranslucentTB\TranslucentTB\out\upload\ExplorerTAP.dll
+D:\a\TranslucentTB\TranslucentTB\out\upload\ProgramLog.dll
+D:\a\TranslucentTB\TranslucentTB\out\upload\resources.pri
+D:\a\TranslucentTB\TranslucentTB\out\upload\TranslucentTB.exe
+D:\a\TranslucentTB\TranslucentTB\out\upload\Xaml.dll
+D:\a\TranslucentTB\TranslucentTB\out\upload\Assets\SplashScreen.jpeg
+D:\a\TranslucentTB\TranslucentTB\out\upload\Assets\SplashScreen.scale-400.jpeg
+
+
