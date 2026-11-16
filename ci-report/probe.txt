@@ -14,3 +14,47 @@ vcpkg-configuration.json exists: False
 C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\MSBuild.exe
 MSBuild version 17.14.60+43b635718 for .NET Framework
 17.14.60.43110
+==== source: AppPackage\bin\x64\Release ====
+
+FullName
+--------
+D:\a\TranslucentTB\TranslucentTB\AppPackage\bin\x64\Release\Assets
+D:\a\TranslucentTB\TranslucentTB\AppPackage\bin\x64\Release\AppPackage.build.appxrecipe
+D:\a\TranslucentTB\TranslucentTB\AppPackage\bin\x64\Release\AppxManifest.xml
+D:\a\TranslucentTB\TranslucentTB\AppPackage\bin\x64\Release\ExplorerHooks.dll
+D:\a\TranslucentTB\TranslucentTB\AppPackage\bin\x64\Release\ExplorerHooks.pdb
+D:\a\TranslucentTB\TranslucentTB\AppPackage\bin\x64\Release\ExplorerTAP.dll
+D:\a\TranslucentTB\TranslucentTB\AppPackage\bin\x64\Release\ExplorerTAP.pdb
+D:\a\TranslucentTB\TranslucentTB\AppPackage\bin\x64\Release\ProgramLog.dll
+D:\a\TranslucentTB\TranslucentTB\AppPackage\bin\x64\Release\ProgramLog.pdb
+D:\a\TranslucentTB\TranslucentTB\AppPackage\bin\x64\Release\resources.pri
+D:\a\TranslucentTB\TranslucentTB\AppPackage\bin\x64\Release\TranslucentTB.exe
+D:\a\TranslucentTB\TranslucentTB\AppPackage\bin\x64\Release\TranslucentTB.pdb
+D:\a\TranslucentTB\TranslucentTB\AppPackage\bin\x64\Release\Xaml.dll
+D:\a\TranslucentTB\TranslucentTB\AppPackage\bin\x64\Release\Xaml.pdb
+D:\a\TranslucentTB\TranslucentTB\AppPackage\bin\x64\Release\Assets\SplashScreen.jpeg
+D:\a\TranslucentTB\TranslucentTB\AppPackage\bin\x64\Release\Assets\SplashScreen.scale-400.jpeg
+
+
+==== packaged ====
+
+FullName
+--------
+D:\a\TranslucentTB\TranslucentTB\out\upload\Assets
+D:\a\TranslucentTB\TranslucentTB\out\upload\AppPackage.build.appxrecipe
+D:\a\TranslucentTB\TranslucentTB\out\upload\AppxManifest.xml
+D:\a\TranslucentTB\TranslucentTB\out\upload\ExplorerHooks.dll
+D:\a\TranslucentTB\TranslucentTB\out\upload\ExplorerHooks.pdb
+D:\a\TranslucentTB\TranslucentTB\out\upload\ExplorerTAP.dll
+D:\a\TranslucentTB\TranslucentTB\out\upload\ExplorerTAP.pdb
+D:\a\TranslucentTB\TranslucentTB\out\upload\ProgramLog.dll
+D:\a\TranslucentTB\TranslucentTB\out\upload\ProgramLog.pdb
+D:\a\TranslucentTB\TranslucentTB\out\upload\resources.pri
+D:\a\TranslucentTB\TranslucentTB\out\upload\TranslucentTB.exe
+D:\a\TranslucentTB\TranslucentTB\out\upload\TranslucentTB.pdb
+D:\a\TranslucentTB\TranslucentTB\out\upload\Xaml.dll
+D:\a\TranslucentTB\TranslucentTB\out\upload\Xaml.pdb
+D:\a\TranslucentTB\TranslucentTB\out\upload\Assets\SplashScreen.jpeg
+D:\a\TranslucentTB\TranslucentTB\out\upload\Assets\SplashScreen.scale-400.jpeg
+
+

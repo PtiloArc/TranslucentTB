@@ -1,5 +1,5 @@
 diff --git a/ExplorerTAP/visualtreewatcher.cpp b/ExplorerTAP/visualtreewatcher.cpp
-index f1479d6..f217364 100644
+index f1479d6..2a2b5b6 100644
 --- a/ExplorerTAP/visualtreewatcher.cpp
 +++ b/ExplorerTAP/visualtreewatcher.cpp
 @@ -45,6 +45,21 @@ HRESULT VisualTreeWatcher::OnVisualTreeChange(ParentChildRelation relation, Visu
@@ -7,19 +7,19 @@ index f1479d6..f217364 100644
  			// we need RootGrid's pointer to find the right source based on its contents.
  			const auto rootGrid = FromHandle<wux::UIElement>(relation.Parent);
 +			// 26H2 wraps the taskbar frame in ScrollViewer / ScrollContentPresenter / Border,
-+			// so the frame's parent is no longer the DesktopWindowXamlSource content.
++			// so the frame parent is no longer the DesktopWindowXamlSource content.
 +			// Walk up the ancestor chain instead of assuming a single level.
-+		 auto isSameOrAncestor = [](wux::DependencyObject ancestor, wux::DependencyObject node)
++			const auto isSameOrAncestor = [](wux::DependencyObject ancestor, wux::DependencyObject node)
 +			{
-+			 (auto current = node; current; current = wux::Media::VisualTreeHelper::GetParent(current))
++				for (auto current = node; current; current = wux::Media::VisualTreeHelper::GetParent(current))
 +				{
-+				 (current == ancestor)
++					if (current == ancestor)
 +					{
-+					 true;
++						return true;
 +					}
 +				}
 +
-+			 false;
++				return false;
 +			};
  
  			for (auto it = m_NonMatchingXamlSources.begin(); it != m_NonMatchingXamlSources.end(); ++it)
