@@ -80,26 +80,33 @@ jobs:
           if (-not $src.Contains($anchor)) { throw "anchor 1 not found" }
           if (-not $src.Contains($oldIf)) { throw "anchor 2 not found" }
           $t = [char]9
-          $lambda = (@(
-            "",
-            "$t$t$t// 26H2 wraps the taskbar frame in ScrollViewer / ScrollContentPresenter / Border,",
-            "$t$t$t// so the frame's parent is no longer the DesktopWindowXamlSource content.",
-            "$t$t$t// Walk up the ancestor chain instead of assuming a single level.",
-            "$t$t$tconst auto isSameOrAncestor = [](wux::DependencyObject ancestor, wux::DependencyObject node)",
-            "$t$t$t{",
-            "$t$t$t$tfor (auto current = node; current; current = wux::Media::VisualTreeHelper::GetParent(current))",
-            "$t$t$t$t{",
-            "$t$t$t$t$tif (current == ancestor)",
-            "$t$t$t$t$t{",
-            "$t$t$t$t$t$treturn true;",
-            "$t$t$t$t$t}",
-            "$t$t$t$t}",
-            "",
-            "$t$t$t$treturn false;",
-            "$t$t$t};"
-          ) -join "`r`n")
+          $i3 = "$t$t$t"
+          $i4 = "$i3$t"
+          $i5 = "$i4$t"
+          $i6 = "$i5$t"
+          $lambda = @(
+            '',
+            ($i3 + '// 26H2 wraps the taskbar frame in ScrollViewer / ScrollContentPresenter / Border,'),
+            ($i3 + '// so the frame parent is no longer the DesktopWindowXamlSource content.'),
+            ($i3 + '// Walk up the ancestor chain instead of assuming a single level.'),
+            ($i3 + 'const auto isSameOrAncestor = [](wux::DependencyObject ancestor, wux::DependencyObject node)'),
+            ($i3 + '{'),
+            ($i4 + 'for (auto current = node; current; current = wux::Media::VisualTreeHelper::GetParent(current))'),
+            ($i4 + '{'),
+            ($i5 + 'if (current == ancestor)'),
+            ($i5 + '{'),
+            ($i6 + 'return true;'),
+            ($i5 + '}'),
+            ($i4 + '}'),
+            '',
+            ($i4 + 'return false;'),
+            ($i3 + '};')
+          ) -join "`r`n"
           $src = $src.Replace($anchor, $anchor + $lambda)
           $src = $src.Replace($oldIf, 'if (isSameOrAncestor(content, rootGrid))')
+          if (-not $src.Contains('auto current = node; current;')) { throw "patch sanity check failed" }
+          if (-not $src.Contains('const auto isSameOrAncestor')) { throw "patch sanity check failed" }
+          if (-not $src.Contains('return true;')) { throw "patch sanity check failed" }
           Set-Content $p $src -NoNewline -Encoding utf8
           git diff -- ExplorerTAP/visualtreewatcher.cpp | Tee-Object ci-report\patch.txt
 
