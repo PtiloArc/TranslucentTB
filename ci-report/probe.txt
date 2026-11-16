@@ -1,0 +1,16 @@
+=== Visual Studio ===
+C:\Program Files\Microsoft Visual Studio\18\Enterprise
+18.11.3
+
+=== vcpkg ===
+VCPKG_INSTALLATION_ROOT=C:\vcpkg
+vcpkg.json exists: False
+slnx exists: True
+vcpkg-configuration.json exists: False
+
+=== NuGet configuration ===
+
+=== MSBuild ===
+C:\Program Files\Microsoft Visual Studio\18\Enterprise\MSBuild\Current\Bin\MSBuild.exe
+MSBuild version 18.11.1-1.26513.3+940033be3 for .NET Framework
+18.11.1.51303
