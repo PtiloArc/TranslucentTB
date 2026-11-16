@@ -17,7 +17,7 @@ MSBuild version 17.14.60+43b635718 for .NET Framework
     * vcpkg-cmake-config:x64-windows@2024-05-23 -- git+https://github.com/microsoft/vcpkg@97a63e4bc1a17422ffe4eff71da53b4b561a7841
       wil:x64-windows-static@1.0.250325.1 -- git+https://github.com/microsoft/vcpkg@254977d7ae1b2a2c086359b0df1373c796538f1d
   Additional packages (*) will be modified to complete this operation.
-  Restored 0 package(s) from C:\Users\runneradmin\AppData\Local\vcpkg\archives in 128 us. Use --debug to see more details.
+  Restored 0 package(s) from C:\Users\runneradmin\AppData\Local\vcpkg\archives in 109 us. Use --debug to see more details.
   Installing 1/4 detours:x64-windows-static@4.0.1#999...
   detours:x64-windows-static@4.0.1#999 package ABI: b85346e7fac8cfe888f6366e50564f3224bf7f1a06231333e6a4cb44e83b995b
   Building detours:x64-windows-static@4.0.1#999...
@@ -39,7 +39,7 @@ MSBuild version 17.14.60+43b635718 for .NET Framework
   -- Installing: C:/vcpkg/packages/detours_x64-windows-static/share/detours/copyright
   -- Performing post-build validation
   Starting submission of detours:x64-windows-static@4.0.1#999 to 1 binary cache(s) in the background
-  Elapsed time to handle detours:x64-windows-static: 13 s
+  Elapsed time to handle detours:x64-windows-static: 22 s
   Installing 2/4 vcpkg-cmake-config:x64-windows@2024-05-23...
   vcpkg-cmake-config:x64-windows@2024-05-23 package ABI: 5f792bba831db8eceba36ee7a8942785c8be7ea773b31c8defc1682cc2864308
   Building vcpkg-cmake-config:x64-windows@2024-05-23...
@@ -49,7 +49,7 @@ MSBuild version 17.14.60+43b635718 for .NET Framework
   -- Installing: C:/vcpkg/packages/vcpkg-cmake-config_x64-windows/share/vcpkg-cmake-config/copyright
   -- Skipping post-build validation due to VCPKG_POLICY_EMPTY_PACKAGE
   Starting submission of vcpkg-cmake-config:x64-windows@2024-05-23 to 1 binary cache(s) in the background
-  Elapsed time to handle vcpkg-cmake-config:x64-windows: 54 ms
+  Elapsed time to handle vcpkg-cmake-config:x64-windows: 69.1 ms
   Installing 3/4 vcpkg-cmake:x64-windows@2024-04-23...
   vcpkg-cmake:x64-windows@2024-04-23 package ABI: 3e6a6ea2e9304c22e4acf4b382ddeda4f02b54d9659bd252c044a847af8f56ab
   Building vcpkg-cmake:x64-windows@2024-04-23...
@@ -61,7 +61,7 @@ MSBuild version 17.14.60+43b635718 for .NET Framework
   -- Installing: C:/vcpkg/packages/vcpkg-cmake_x64-windows/share/vcpkg-cmake/copyright
   -- Performing post-build validation
   Starting submission of vcpkg-cmake:x64-windows@2024-04-23 to 1 binary cache(s) in the background
-  Elapsed time to handle vcpkg-cmake:x64-windows: 59.5 ms
+  Elapsed time to handle vcpkg-cmake:x64-windows: 90.3 ms
   Installing 4/4 wil:x64-windows-static@1.0.250325.1...
   wil:x64-windows-static@1.0.250325.1 package ABI: 6f0d71887455e8140069ab50f7cea77a1527be7d5c5ca8dda9b1ef245fe4fd15
   Building wil:x64-windows-static@1.0.250325.1...
@@ -78,7 +78,7 @@ MSBuild version 17.14.60+43b635718 for .NET Framework
   -- Installing: C:/vcpkg/packages/wil_x64-windows-static/share/wil/copyright
   -- Performing post-build validation
   Starting submission of wil:x64-windows-static@1.0.250325.1 to 1 binary cache(s) in the background
-  Elapsed time to handle wil:x64-windows-static: 2.9 s
+  Elapsed time to handle wil:x64-windows-static: 2.7 s
   Installed contents are licensed to you by owners. Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
   Some packages did not declare an SPDX license. Check the `copyright` file for each package for more information about their licensing.
   Packages installed in this vcpkg installation declare the following licenses:
@@ -90,11 +90,11 @@ MSBuild version 17.14.60+43b635718 for .NET Framework
     target_link_libraries(main PRIVATE WIL::WIL)
   
   Completed submission of detours:x64-windows-static@4.0.1#999 to 1 binary cache(s) in 176 ms
-  Completed submission of vcpkg-cmake-config:x64-windows@2024-05-23 to 1 binary cache(s) in 39.1 ms
-  Completed submission of vcpkg-cmake:x64-windows@2024-04-23 to 1 binary cache(s) in 41.8 ms
+  Completed submission of vcpkg-cmake-config:x64-windows@2024-05-23 to 1 binary cache(s) in 42.3 ms
+  Completed submission of vcpkg-cmake:x64-windows@2024-04-23 to 1 binary cache(s) in 45.6 ms
   Waiting for 1 remaining binary cache submissions...
-  Completed submission of wil:x64-windows-static@1.0.250325.1 to 1 binary cache(s) in 95.5 ms (1/1)
-  All requested installations completed successfully in: 16 s
+  Completed submission of wil:x64-windows-static@1.0.250325.1 to 1 binary cache(s) in 85.8 ms (1/1)
+  All requested installations completed successfully in: 25 s
   api.cpp
   common.cpp
   detourtransaction.cpp
@@ -185,19 +185,19 @@ MSBuild version 17.14.60+43b635718 for .NET Framework
     * vcpkg-cmake-config:x64-windows@2024-05-23 -- git+https://github.com/microsoft/vcpkg@97a63e4bc1a17422ffe4eff71da53b4b561a7841
       wil:x64-windows-static@1.0.250325.1 -- git+https://github.com/microsoft/vcpkg@254977d7ae1b2a2c086359b0df1373c796538f1d
   Additional packages (*) will be modified to complete this operation.
-  Restored 4 package(s) from C:\Users\runneradmin\AppData\Local\vcpkg\archives in 97.5 ms. Use --debug to see more details.
+  Restored 4 package(s) from C:\Users\runneradmin\AppData\Local\vcpkg\archives in 73 ms. Use --debug to see more details.
   Installing 1/4 detours:x64-windows-static@4.0.1#999...
   detours:x64-windows-static@4.0.1#999 package ABI: b85346e7fac8cfe888f6366e50564f3224bf7f1a06231333e6a4cb44e83b995b
-  Elapsed time to handle detours:x64-windows-static: 3.94 ms
+  Elapsed time to handle detours:x64-windows-static: 3.25 ms
   Installing 2/4 vcpkg-cmake-config:x64-windows@2024-05-23...
   vcpkg-cmake-config:x64-windows@2024-05-23 package ABI: 5f792bba831db8eceba36ee7a8942785c8be7ea773b31c8defc1682cc2864308
-  Elapsed time to handle vcpkg-cmake-config:x64-windows: 1.98 ms
+  Elapsed time to handle vcpkg-cmake-config:x64-windows: 1.55 ms
   Installing 3/4 vcpkg-cmake:x64-windows@2024-04-23...
   vcpkg-cmake:x64-windows@2024-04-23 package ABI: 3e6a6ea2e9304c22e4acf4b382ddeda4f02b54d9659bd252c044a847af8f56ab
-  Elapsed time to handle vcpkg-cmake:x64-windows: 2.66 ms
+  Elapsed time to handle vcpkg-cmake:x64-windows: 1.88 ms
   Installing 4/4 wil:x64-windows-static@1.0.250325.1...
   wil:x64-windows-static@1.0.250325.1 package ABI: 6f0d71887455e8140069ab50f7cea77a1527be7d5c5ca8dda9b1ef245fe4fd15
-  Elapsed time to handle wil:x64-windows-static: 8.21 ms
+  Elapsed time to handle wil:x64-windows-static: 6.05 ms
   Installed contents are licensed to you by owners. Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
   Some packages did not declare an SPDX license. Check the `copyright` file for each package for more information about their licensing.
   Packages installed in this vcpkg installation declare the following licenses:
@@ -208,7 +208,7 @@ MSBuild version 17.14.60+43b635718 for .NET Framework
     find_package(wil CONFIG REQUIRED)
     target_link_libraries(main PRIVATE WIL::WIL)
   
-  All requested installations completed successfully in: 17.8 ms
+  All requested installations completed successfully in: 13.6 ms
   api.cpp
   dllmain.cpp
   CompositeEffect.cpp
@@ -218,17 +218,87 @@ MSBuild version 17.14.60+43b635718 for .NET Framework
   tapsite.cpp
   taskbarappearanceservice.cpp
   visualtreewatcher.cpp
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(53,6): error C2760: syntax error: 'auto' was unexpected here; expected 'expression' [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+  			 (auto current = node; current; current = wux::Media::VisualTreeHelper::GetParent(current))
+  			  ^
+  
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(53,6): error C3878: syntax error: unexpected token 'auto' following 'expression' [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+  			 (auto current = node; current; current = wux::Media::VisualTreeHelper::GetParent(current))
+  			  ^
+  
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(53,94): error C2760: syntax error: ')' was unexpected here; expected ';' [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+  			 (auto current = node; current; current = wux::Media::VisualTreeHelper::GetParent(current))
+  			                                                                                          ^
+  
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(53,94): error C3878: syntax error: unexpected token ')' following 'expression-statement' [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+  			 (auto current = node; current; current = wux::Media::VisualTreeHelper::GetParent(current))
+  			                                                                                          ^
+  
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(57,11): error C2760: syntax error: ';' was unexpected here; expected '}' [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+  					 true;
+  					     ^
+  
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(56,6): error C2760: syntax error: '{' was unexpected here; expected 'expression' [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+  					{
+  					^
+  
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(58,6): error C2760: syntax error: '}' was unexpected here; expected ';' [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+  					}
+  					^
+  
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(61,10): error C2059: syntax error: ';' [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+  			 false;
+  			      ^
+  
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(77,35): error C2065: 'rootGrid': undeclared identifier [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+  				if (isSameOrAncestor(content, rootGrid))
+  				                              ^
+  
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(77,9): error C3861: 'isSameOrAncestor': identifier not found [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+  				if (isSameOrAncestor(content, rootGrid))
+  				    ^
+  
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(91,3): error C2181: illegal else without matching if [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+  		else if (type_view == winrt::name_of<wux::Shapes::Rectangle>())
+  		^
+  
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(91,12): error C2065: 'type_view': undeclared identifier [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+  		else if (type_view == winrt::name_of<wux::Shapes::Rectangle>())
+  		         ^
+  
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(119,2): error C2046: illegal case [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+  	case Remove: // only element.Handle is valid
+  	^
+  
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(22,133): error C2317: 'try' block starting on line '22' has no catch handlers [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+  HRESULT VisualTreeWatcher::OnVisualTreeChange(ParentChildRelation relation, VisualElement element, VisualMutationType mutationType) try
+                                                                                                                                      ^
+  
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(122,3): error C2043: illegal break [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+  		break;
+  		^
+  
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(125,2): error C2059: syntax error: 'return' [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+  	return S_OK;
+  	^
+  
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(126,1): error C2059: syntax error: '}' [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+  }
+  ^
+  
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(126,1): error C2143: syntax error: missing ';' before '}' [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+  }
+  ^
+  
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(128,1): error C2143: syntax error: missing ';' before '{' [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+  {
+  ^
+  
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(128,1): error C2447: '{': missing function header (old-style formal list?) [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+  {
+  ^
+  
   XamlBlurBrush.cpp
-  dlldata.c
-  ExplorerTAP_i.c
-  ITaskbarAppearanceService_i.c
-  ITaskbarAppearanceService_p.c
-  IVersionedApi_i.c
-  IVersionedApi_p.c
-     Creating library D:\a\TranslucentTB\TranslucentTB\x64\Release\ExplorerTAP.lib and object D:\a\TranslucentTB\TranslucentTB\x64\Release\ExplorerTAP.exp
-  Generating code
-  Finished generating code
-  ExplorerTAP.vcxproj -> D:\a\TranslucentTB\TranslucentTB\x64\Release\ExplorerTAP.dll
   Installing vcpkg dependencies to D:\a\TranslucentTB\TranslucentTB\ProgramLog\vcpkg_installed\x64-windows\
   "C:\vcpkg\vcpkg.exe" install  --x-wait-for-lock --triplet "x64-windows" --vcpkg-root "C:\vcpkg\\" "--x-manifest-root=D:\a\TranslucentTB\TranslucentTB\ProgramLog\\" "--x-install-root=D:\a\TranslucentTB\TranslucentTB\ProgramLog\vcpkg_installed\x64-windows\\" 
   Fetching registry information from https://github.com/microsoft/vcpkg (HEAD)...
@@ -242,13 +312,13 @@ MSBuild version 17.14.60+43b635718 for .NET Framework
     * vcpkg-cmake-config:x64-windows@2024-05-23 -- git+https://github.com/microsoft/vcpkg@97a63e4bc1a17422ffe4eff71da53b4b561a7841
       wil:x64-windows@1.0.250325.1 -- git+https://github.com/microsoft/vcpkg@254977d7ae1b2a2c086359b0df1373c796538f1d
   Additional packages (*) will be modified to complete this operation.
-  Restored 2 package(s) from C:\Users\runneradmin\AppData\Local\vcpkg\archives in 45.7 ms. Use --debug to see more details.
+  Restored 2 package(s) from C:\Users\runneradmin\AppData\Local\vcpkg\archives in 37 ms. Use --debug to see more details.
   Installing 1/6 vcpkg-cmake-config:x64-windows@2024-05-23...
   vcpkg-cmake-config:x64-windows@2024-05-23 package ABI: 5f792bba831db8eceba36ee7a8942785c8be7ea773b31c8defc1682cc2864308
-  Elapsed time to handle vcpkg-cmake-config:x64-windows: 2.54 ms
+  Elapsed time to handle vcpkg-cmake-config:x64-windows: 2.06 ms
   Installing 2/6 vcpkg-cmake:x64-windows@2024-04-23...
   vcpkg-cmake:x64-windows@2024-04-23 package ABI: 3e6a6ea2e9304c22e4acf4b382ddeda4f02b54d9659bd252c044a847af8f56ab
-  Elapsed time to handle vcpkg-cmake:x64-windows: 2.47 ms
+  Elapsed time to handle vcpkg-cmake:x64-windows: 1.99 ms
   Installing 3/6 rapidjson:x64-windows@2025-02-26...
   rapidjson:x64-windows@2025-02-26 package ABI: 95ecb0d0edb70b223b853136e1def6352796fe86022fe388b4cc96b1e749eace
   Building rapidjson:x64-windows@2025-02-26...
@@ -268,7 +338,7 @@ MSBuild version 17.14.60+43b635718 for .NET Framework
   -- Installing: C:/vcpkg/packages/rapidjson_x64-windows/share/rapidjson/copyright
   -- Performing post-build validation
   Starting submission of rapidjson:x64-windows@2025-02-26 to 1 binary cache(s) in the background
-  Elapsed time to handle rapidjson:x64-windows: 6.3 s
+  Elapsed time to handle rapidjson:x64-windows: 4.8 s
   Installing 4/6 fmt:x64-windows@12.1.0...
   fmt:x64-windows@12.1.0 package ABI: f54d8b17051cb5d7ff97ca9fc1a337a1b4746071998b3af8a84ee8692fd6864a
   Building fmt:x64-windows@12.1.0...
@@ -289,8 +359,8 @@ MSBuild version 17.14.60+43b635718 for .NET Framework
   -- Installing: C:/vcpkg/packages/fmt_x64-windows/share/fmt/copyright
   -- Performing post-build validation
   Starting submission of fmt:x64-windows@12.1.0 to 1 binary cache(s) in the background
-  Elapsed time to handle fmt:x64-windows: 8.1 s
-  Completed submission of rapidjson:x64-windows@2025-02-26 to 1 binary cache(s) in 72.6 ms
+  Elapsed time to handle fmt:x64-windows: 7.1 s
+  Completed submission of rapidjson:x64-windows@2025-02-26 to 1 binary cache(s) in 61.8 ms
   Installing 5/6 spdlog:x64-windows@1.16.0...
   spdlog:x64-windows@1.16.0 package ABI: cb7fb0cdda0a7b76c9acc040820ea90681cb94e7113ad0ff7cde72965a3d7582
   Building spdlog:x64-windows@1.16.0...
@@ -311,8 +381,8 @@ MSBuild version 17.14.60+43b635718 for .NET Framework
   -- Installing: C:/vcpkg/packages/spdlog_x64-windows/share/spdlog/copyright
   -- Performing post-build validation
   Starting submission of spdlog:x64-windows@1.16.0 to 1 binary cache(s) in the background
-  Elapsed time to handle spdlog:x64-windows: 13 s
-  Completed submission of fmt:x64-windows@12.1.0 to 1 binary cache(s) in 237 ms
+  Elapsed time to handle spdlog:x64-windows: 10 s
+  Completed submission of fmt:x64-windows@12.1.0 to 1 binary cache(s) in 201 ms
   Installing 6/6 wil:x64-windows@1.0.250325.1...
   wil:x64-windows@1.0.250325.1 package ABI: c94c1a87b0b0a4423ea99643350543c468cf4f405296794bc8db3123b1fec8d7
   Building wil:x64-windows@1.0.250325.1...
@@ -329,7 +399,7 @@ MSBuild version 17.14.60+43b635718 for .NET Framework
   -- Installing: C:/vcpkg/packages/wil_x64-windows/share/wil/copyright
   -- Performing post-build validation
   Starting submission of wil:x64-windows@1.0.250325.1 to 1 binary cache(s) in the background
-  Elapsed time to handle wil:x64-windows: 1.7 s
+  Elapsed time to handle wil:x64-windows: 1.6 s
   Installed contents are licensed to you by owners. Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
   Packages installed in this vcpkg installation declare the following licenses:
   MIT
@@ -354,10 +424,10 @@ MSBuild version 17.14.60+43b635718 for .NET Framework
     find_package(wil CONFIG REQUIRED)
     target_link_libraries(main PRIVATE WIL::WIL)
   
-  Completed submission of spdlog:x64-windows@1.16.0 to 1 binary cache(s) in 734 ms
+  Completed submission of spdlog:x64-windows@1.16.0 to 1 binary cache(s) in 640 ms
   Waiting for 1 remaining binary cache submissions...
-  Completed submission of wil:x64-windows@1.0.250325.1 to 1 binary cache(s) in 97.1 ms (1/1)
-  All requested installations completed successfully in: 29 s
+  Completed submission of wil:x64-windows@1.0.250325.1 to 1 binary cache(s) in 83.8 ms (1/1)
+  All requested installations completed successfully in: 24 s
   dllmain.cpp
   errno.cpp
   error.cpp
@@ -4242,16 +4312,16 @@ MSBuild version 17.14.60+43b635718 for .NET Framework
     * vcpkg-cmake-config:x64-windows@2024-05-23 -- git+https://github.com/microsoft/vcpkg@97a63e4bc1a17422ffe4eff71da53b4b561a7841
       wil:x64-windows@1.0.250325.1 -- git+https://github.com/microsoft/vcpkg@254977d7ae1b2a2c086359b0df1373c796538f1d
   Additional packages (*) will be modified to complete this operation.
-  Restored 3 package(s) from C:\Users\runneradmin\AppData\Local\vcpkg\archives in 79.9 ms. Use --debug to see more details.
+  Restored 3 package(s) from C:\Users\runneradmin\AppData\Local\vcpkg\archives in 66.3 ms. Use --debug to see more details.
   Installing 1/3 vcpkg-cmake-config:x64-windows@2024-05-23...
   vcpkg-cmake-config:x64-windows@2024-05-23 package ABI: 5f792bba831db8eceba36ee7a8942785c8be7ea773b31c8defc1682cc2864308
-  Elapsed time to handle vcpkg-cmake-config:x64-windows: 2.46 ms
+  Elapsed time to handle vcpkg-cmake-config:x64-windows: 2.11 ms
   Installing 2/3 vcpkg-cmake:x64-windows@2024-04-23...
   vcpkg-cmake:x64-windows@2024-04-23 package ABI: 3e6a6ea2e9304c22e4acf4b382ddeda4f02b54d9659bd252c044a847af8f56ab
-  Elapsed time to handle vcpkg-cmake:x64-windows: 2.39 ms
+  Elapsed time to handle vcpkg-cmake:x64-windows: 2.07 ms
   Installing 3/3 wil:x64-windows@1.0.250325.1...
   wil:x64-windows@1.0.250325.1 package ABI: c94c1a87b0b0a4423ea99643350543c468cf4f405296794bc8db3123b1fec8d7
-  Elapsed time to handle wil:x64-windows: 8.08 ms
+  Elapsed time to handle wil:x64-windows: 6.28 ms
   Installed contents are licensed to you by owners. Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
   Packages installed in this vcpkg installation declare the following licenses:
   MIT
@@ -4261,7 +4331,7 @@ MSBuild version 17.14.60+43b635718 for .NET Framework
     find_package(wil CONFIG REQUIRED)
     target_link_libraries(main PRIVATE WIL::WIL)
   
-  All requested installations completed successfully in: 13.7 ms
+  All requested installations completed successfully in: 11.1 ms
   pch.cpp
   App.cpp
   BindableObjectReference.cpp
@@ -4301,254 +4371,8 @@ MSBuild version 17.14.60+43b635718 for .NET Framework
   Generating code
   Finished generating code
   Xaml.vcxproj -> D:\a\TranslucentTB\TranslucentTB\x64\Release\Xaml\Xaml.dll
-  64 bit MIDLRT Processing D:\a\TranslucentTB\TranslucentTB\TranslucentTB\taskbar\ShellExperience.idl
-  ShellExperience.idl
-  64 bit MIDLRT Processing D:\a\TranslucentTB\TranslucentTB\packages\Microsoft.Windows.SDK.CPP.10.0.26100.7463\c\Include\10.0.26100.0\winrt\winrtbase.idl
-  winrtbase.idl
-  64 bit MIDLRT Processing D:\a\TranslucentTB\TranslucentTB\packages\Microsoft.Windows.SDK.CPP.10.0.26100.7463\c\Include\10.0.26100.0\winrt\midlbase.idl
-  midlbase.idl
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.ui.xaml.2.8.7\lib\uap10.0\microsoft.ui.xaml.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.web.webview2.1.0.3650.58\lib\microsoft.web.webview2.core.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\x64\release\windowsudk\windowsudk.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\x64\release\xaml\translucenttb.xaml.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.ai.actions.actionscontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.ai.agents.agentscontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.ai.machinelearning.machinelearningcontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.ai.machinelearning.preview.machinelearningpreviewcontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.applicationmodel.activation.activatedeventscontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.applicationmodel.activation.activationcamerasettingscontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.applicationmodel.activation.contactactivatedeventscontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.applicationmodel.activation.webuisearchactivatedeventscontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.applicationmodel.background.backgroundalarmapplicationcontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.applicationmodel.calls.background.callsbackgroundcontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.applicationmodel.calls.callsphonecontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.applicationmodel.calls.callsvoipcontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.applicationmodel.calls.lockscreencallcontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.applicationmodel.communicationblocking.communicationblockingcontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.applicationmodel.fulltrustappcontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.applicationmodel.preview.inkworkspace.previewinkworkspacecontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.applicationmodel.preview.notes.previewnotescontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.applicationmodel.preview.startupappspreviewcontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.applicationmodel.resources.management.resourceindexercontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.applicationmodel.search.core.searchcorecontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.applicationmodel.search.searchcontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.applicationmodel.socialinfo.socialinfocontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.applicationmodel.startuptaskcontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.applicationmodel.wallet.walletcontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.devices.custom.customdevicecontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.devices.deviceslowlevelcontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.devices.portable.portabledevicecontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.devices.power.powergridapicontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.devices.printers.extensions.extensionscontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.devices.printers.printerscontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.devices.scanners.scannerdevicecontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.devices.smartcards.smartcardbackgroundtriggercontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.devices.smartcards.smartcardemulatorcontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.devices.sms.legacysmsapicontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.foundation.foundationcontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.foundation.universalapicontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.gaming.input.gaminginputpreviewcontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.gaming.preview.gamesenumerationcontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.gaming.ui.gamechatoverlaycontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.gaming.ui.gaminguiprovidercontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.gaming.xboxlive.storageapicontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.globalization.globalizationjapanesephoneticanalyzercontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.graphics.printing3d.printing3dcontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.management.deployment.preview.deploymentpreviewcontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.management.deployment.sharedpackagecontainercontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.management.update.windowsupdatecontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.management.workplace.workplacesettingscontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.media.appbroadcasting.appbroadcastingcontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.media.apprecording.apprecordingcontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.media.capture.appbroadcastcontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.media.capture.appcapturecontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.media.capture.appcapturemetadatacontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.media.capture.cameracaptureuicontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.media.capture.gamebarcontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.media.devices.callcontrolcontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.media.mediacontrolcontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.media.playlists.playlistscontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.media.protection.protectionrenewalcontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.networking.connectivity.wwancontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.networking.networkoperators.legacynetworkoperatorscontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.networking.sockets.controlchanneltriggercontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.networking.xboxlive.xboxlivesecuresocketscontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.perception.automation.core.perceptionautomationcorecontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.security.enterprisedata.enterprisedatacontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.security.exchangeactivesyncprovisioning.eascontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.security.isolation.isolatedwindowsenvironmentcontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.services.maps.guidancecontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.services.maps.localsearchcontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.services.store.storecontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.services.targetedcontent.targetedcontentcontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.storage.provider.cloudfilescontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.system.power.thermal.powerthermalapicontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.system.profile.platformautomaticappsignincontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.system.profile.profilehardwaretokencontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.system.profile.profileretailinfocontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.system.profile.profilesharedmodecontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.system.profile.systemmanufacturers.systemmanufacturerscontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.system.systemmanagementcontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.system.userprofile.userprofilecontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.system.userprofile.userprofilelockscreencontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.ui.applicationsettings.applicationssettingscontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.ui.core.animationmetrics.animationmetricscontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.ui.core.corewindowdialogscontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.ui.input.preview.text.previewtextcontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.ui.shell.securityappmanagercontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.ui.shell.windowtabmanagercontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.ui.uiautomation.uiautomationcontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.ui.viewmanagement.viewmanagementviewscalingcontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.ui.xaml.core.direct.xamldirectcontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.ui.xaml.hosting.hostingcontract.winmd
-  Processing WinMD d:\a\translucenttb\translucenttb\packages\microsoft.windows.sdk.cpp.10.0.26100.7463\c\references\10.0.26100.0\windows.web.http.diagnostics.httpdiagnosticscontract.winmd
-  Microsoft(R) Metadata Merge Utility Version 10.0.49.
-  
-  
-  Processing input metadata file x64\Release\Unmerged\ShellExperience.winmd.
-  Saved output metadata file Windows.winmd.
-  Validating metadata file x64\Release\Merged\Windows.winmd.
-  Installing vcpkg dependencies to D:\a\TranslucentTB\TranslucentTB\TranslucentTB\vcpkg_installed\x64-windows\
-  "C:\vcpkg\vcpkg.exe" install  --x-wait-for-lock --triplet "x64-windows" --vcpkg-root "C:\vcpkg\\" "--x-manifest-root=D:\a\TranslucentTB\TranslucentTB\TranslucentTB\\" "--x-install-root=D:\a\TranslucentTB\TranslucentTB\TranslucentTB\vcpkg_installed\x64-windows\\" 
-  Fetching registry information from https://github.com/microsoft/vcpkg (HEAD)...
-  Detecting compiler hash for triplet x64-windows...
-  Compiler found: C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe
-  The following packages will be built and installed:
-    * fmt:x64-windows@12.1.0 -- git+https://github.com/microsoft/vcpkg@936231a2c765082457d348a8781ea9d3610eb331
-      member-thunk:x64-windows@0.0.1#1 -- D:\a\TranslucentTB\TranslucentTB\TranslucentTB\../vcpkg/ports\member-thunk
-      rapidjson:x64-windows@2025-02-26 -- git+https://github.com/microsoft/vcpkg@4297a243aa0e3ed6c3a4c307579914593da5751d
-      spdlog:x64-windows@1.16.0 -- git+https://github.com/microsoft/vcpkg@5e6886c421877c656b6be701880e2cbe2bc16131
-    * vcpkg-cmake:x64-windows@2024-04-23 -- git+https://github.com/microsoft/vcpkg@e74aa1e8f93278a8e71372f1fa08c3df420eb840
-    * vcpkg-cmake-config:x64-windows@2024-05-23 -- git+https://github.com/microsoft/vcpkg@97a63e4bc1a17422ffe4eff71da53b4b561a7841
-      wil:x64-windows@1.0.250325.1 -- git+https://github.com/microsoft/vcpkg@254977d7ae1b2a2c086359b0df1373c796538f1d
-  Additional packages (*) will be modified to complete this operation.
-  Restored 6 package(s) from C:\Users\runneradmin\AppData\Local\vcpkg\archives in 334 ms. Use --debug to see more details.
-  Installing 1/7 member-thunk:x64-windows@0.0.1#1...
-  member-thunk:x64-windows@0.0.1#1 package ABI: 1dddb9f33b6e5f03035dfd1f179cfb8bc9371fcbb28cd10941bb1d9e23bf5fba
-  Building member-thunk:x64-windows@0.0.1#1...
-  D:\a\TranslucentTB\TranslucentTB\TranslucentTB\../vcpkg/ports\member-thunk: info: installing overlay port from here
-  Downloading https://github.com/sylveon/member_thunk/archive/3acf1402af87de495f073233c9b842c230a7fb12.tar.gz -> sylveon-member_thunk-3acf1402af87de495f073233c9b842c230a7fb12.tar.gz
-  Successfully downloaded sylveon-member_thunk-3acf1402af87de495f073233c9b842c230a7fb12.tar.gz
-  -- Extracting source C:/vcpkg/downloads/sylveon-member_thunk-3acf1402af87de495f073233c9b842c230a7fb12.tar.gz
-  -- Using source at C:/vcpkg/buildtrees/member-thunk/src/c230a7fb12-78beb49d8f.clean
-  -- Installing: C:/vcpkg/packages/member-thunk_x64-windows/include/member_thunk
-  -- Installing: C:/vcpkg/packages/member-thunk_x64-windows/include/member_thunk/default_heap.hpp
-  -- Installing: C:/vcpkg/packages/member-thunk_x64-windows/include/member_thunk/default_heap.impl.hpp
-  -- Installing: C:/vcpkg/packages/member-thunk_x64-windows/include/member_thunk/details
-  -- Installing: C:/vcpkg/packages/member-thunk_x64-windows/include/member_thunk/details/function_traits.hpp
-  -- Installing: C:/vcpkg/packages/member-thunk_x64-windows/include/member_thunk/details/heap
-  -- Installing: C:/vcpkg/packages/member-thunk_x64-windows/include/member_thunk/details/heap/memory.hpp
-  -- Installing: C:/vcpkg/packages/member-thunk_x64-windows/include/member_thunk/details/heap/memory.impl.hpp
-  -- Installing: C:/vcpkg/packages/member-thunk_x64-windows/include/member_thunk/details/heap/region.hpp
-  -- Installing: C:/vcpkg/packages/member-thunk_x64-windows/include/member_thunk/details/heap/region.impl.hpp
-  -- Installing: C:/vcpkg/packages/member-thunk_x64-windows/include/member_thunk/details/list.hpp
-  -- Installing: C:/vcpkg/packages/member-thunk_x64-windows/include/member_thunk/details/list.impl.hpp
-  -- Installing: C:/vcpkg/packages/member-thunk_x64-windows/include/member_thunk/details/thunk
-  -- Installing: C:/vcpkg/packages/member-thunk_x64-windows/include/member_thunk/details/thunk/thunk.hpp
-  -- Installing: C:/vcpkg/packages/member-thunk_x64-windows/include/member_thunk/details/thunk/thunk.impl.arm64.hpp
-  -- Installing: C:/vcpkg/packages/member-thunk_x64-windows/include/member_thunk/details/thunk/thunk.impl.x64.hpp
-  -- Installing: C:/vcpkg/packages/member-thunk_x64-windows/include/member_thunk/error
-  -- Installing: C:/vcpkg/packages/member-thunk_x64-windows/include/member_thunk/error/exception.hpp
-  -- Installing: C:/vcpkg/packages/member-thunk_x64-windows/include/member_thunk/error/heap_not_empty.hpp
-  -- Installing: C:/vcpkg/packages/member-thunk_x64-windows/include/member_thunk/error/invalid_memory_layout.hpp
-  -- Installing: C:/vcpkg/packages/member-thunk_x64-windows/include/member_thunk/error/page_executable.hpp
-  -- Installing: C:/vcpkg/packages/member-thunk_x64-windows/include/member_thunk/error/page_full.hpp
-  -- Installing: C:/vcpkg/packages/member-thunk_x64-windows/include/member_thunk/error/region_full.hpp
-  -- Installing: C:/vcpkg/packages/member-thunk_x64-windows/include/member_thunk/error/region_not_empty.hpp
-  -- Installing: C:/vcpkg/packages/member-thunk_x64-windows/include/member_thunk/error/win32_error.hpp
-  -- Installing: C:/vcpkg/packages/member-thunk_x64-windows/include/member_thunk/heap.hpp
-  -- Installing: C:/vcpkg/packages/member-thunk_x64-windows/include/member_thunk/heap.impl.hpp
-  -- Installing: C:/vcpkg/packages/member-thunk_x64-windows/include/member_thunk/lock
-  -- Installing: C:/vcpkg/packages/member-thunk_x64-windows/include/member_thunk/lock/null_lock.hpp
-  -- Installing: C:/vcpkg/packages/member-thunk_x64-windows/include/member_thunk/lock/slim_lock.hpp
-  -- Installing: C:/vcpkg/packages/member-thunk_x64-windows/include/member_thunk/member_thunk.hpp
-  -- Installing: C:/vcpkg/packages/member-thunk_x64-windows/include/member_thunk/page.hpp
-  -- Installing: C:/vcpkg/packages/member-thunk_x64-windows/include/member_thunk/page.impl.hpp
-  -- Installing: C:/vcpkg/packages/member-thunk_x64-windows/share/member-thunk/copyright
-  -- Performing post-build validation
-  Starting submission of member-thunk:x64-windows@0.0.1#1 to 1 binary cache(s) in the background
-  Elapsed time to handle member-thunk:x64-windows: 928 ms
-  Installing 2/7 vcpkg-cmake-config:x64-windows@2024-05-23...
-  vcpkg-cmake-config:x64-windows@2024-05-23 package ABI: 5f792bba831db8eceba36ee7a8942785c8be7ea773b31c8defc1682cc2864308
-  Elapsed time to handle vcpkg-cmake-config:x64-windows: 1.99 ms
-  Installing 3/7 vcpkg-cmake:x64-windows@2024-04-23...
-  vcpkg-cmake:x64-windows@2024-04-23 package ABI: 3e6a6ea2e9304c22e4acf4b382ddeda4f02b54d9659bd252c044a847af8f56ab
-  Elapsed time to handle vcpkg-cmake:x64-windows: 2.49 ms
-  Installing 4/7 rapidjson:x64-windows@2025-02-26...
-  rapidjson:x64-windows@2025-02-26 package ABI: 95ecb0d0edb70b223b853136e1def6352796fe86022fe388b4cc96b1e749eace
-  Elapsed time to handle rapidjson:x64-windows: 8.91 ms
-  Installing 5/7 fmt:x64-windows@12.1.0...
-  fmt:x64-windows@12.1.0 package ABI: f54d8b17051cb5d7ff97ca9fc1a337a1b4746071998b3af8a84ee8692fd6864a
-  Elapsed time to handle fmt:x64-windows: 7.68 ms
-  Installing 6/7 spdlog:x64-windows@1.16.0...
-  spdlog:x64-windows@1.16.0 package ABI: cb7fb0cdda0a7b76c9acc040820ea90681cb94e7113ad0ff7cde72965a3d7582
-  Elapsed time to handle spdlog:x64-windows: 21 ms
-  Installing 7/7 wil:x64-windows@1.0.250325.1...
-  wil:x64-windows@1.0.250325.1 package ABI: c94c1a87b0b0a4423ea99643350543c468cf4f405296794bc8db3123b1fec8d7
-  Elapsed time to handle wil:x64-windows: 8.43 ms
-  Installed contents are licensed to you by owners. Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
-  Some packages did not declare an SPDX license. Check the `copyright` file for each package for more information about their licensing.
-  Packages installed in this vcpkg installation declare the following licenses:
-  MIT
-  member-thunk is header-only and can be used from CMake via:
-  
-    find_path(MEMBER_THUNK_INCLUDE_DIRS "member_thunk/default_heap.hpp")
-    target_include_directories(main PRIVATE ${MEMBER_THUNK_INCLUDE_DIRS})
-  
-  rapidjson provides CMake targets:
-  
-    # this is heuristically generated, and may not be correct
-    find_package(RapidJSON CONFIG REQUIRED)
-    target_link_libraries(main PRIVATE RapidJSON rapidjson)
-  
-  The package spdlog provides CMake targets:
-  
-      find_package(spdlog CONFIG REQUIRED)
-      target_link_libraries(main PRIVATE spdlog::spdlog)
-  
-      # Or use the header-only version
-      find_package(spdlog CONFIG REQUIRED)
-      target_link_libraries(main PRIVATE spdlog::spdlog_header_only)
-  
-  wil provides CMake targets:
-  
-    # this is heuristically generated, and may not be correct
-    find_package(wil CONFIG REQUIRED)
-    target_link_libraries(main PRIVATE WIL::WIL)
-  
-  Waiting for 1 remaining binary cache submissions...
-  Completed submission of member-thunk:x64-windows@0.0.1#1 to 1 binary cache(s) in 76.1 ms (1/1)
-  All requested installations completed successfully in: 980 ms
-  application.cpp
-  loadabledll.cpp
-  localization.cpp
-  configmanager.cpp
-  folderwatcher.cpp
-  mainappwindow.cpp
-  startupmanager.cpp
-  taskbarattributeworker.cpp
-  main.cpp
-  basecontextmenu.cpp
-  basexamlpagehost.cpp
-  dynamicdependency.cpp
-  xamldragregion.cpp
-  xamlthreadpool.cpp
-  xamlthread.cpp
-  messagewindow.cpp
-  trayicon.cpp
-  uwp.cpp
-  window.cpp
-  windowclass.cpp
-  Generating manifest for D:\a\TranslucentTB\TranslucentTB\x64\Release\Xaml\TranslucentTB.Xaml.winmd
-  Generating lib file for api-ms-win-appmodel-runtime-l1-1-5.def
-     Creating library x64\Release\api-ms-win-appmodel-runtime-l1-1-5.lib and object x64\Release\api-ms-win-appmodel-runtime-l1-1-5.exp
-  Generating code
-  Finished generating code
-  TranslucentTB.vcxproj -> D:\a\TranslucentTB\TranslucentTB\x64\Release\TranslucentTB.exe
   Xaml.vcxproj -> D:\a\TranslucentTB\TranslucentTB\x64\Release\Xaml\Xaml.dll
-  Xaml.vcxproj -> D:\a\TranslucentTB\TranslucentTB\x64\Release\Xaml\Xaml.dll
-  AppPackage -> D:\a\TranslucentTB\TranslucentTB\AppPackage\AppPackages\AppPackage_1.0.0.0_x64_Test\AppPackage_1.0.0.0_x64.msix
-  AppPackage -> obj\x64\Release\Symbols\AppPackage_1.0.0.0_x64.appxsym
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Microsoft\DesktopBridge\Microsoft.DesktopBridge.targets(499,5): error MSB4181: The "MSBuild" task returned false but did not log an error. [D:\a\TranslucentTB\TranslucentTB\AppPackage\AppPackage.wapproj]
   Installing vcpkg dependencies to D:\a\TranslucentTB\TranslucentTB\Tests\vcpkg_installed\x64-windows\
   "C:\vcpkg\vcpkg.exe" install  --x-wait-for-lock --triplet "x64-windows" --vcpkg-root "C:\vcpkg\\" "--x-manifest-root=D:\a\TranslucentTB\TranslucentTB\Tests\\" "--x-install-root=D:\a\TranslucentTB\TranslucentTB\Tests\vcpkg_installed\x64-windows\\" 
   Fetching registry information from https://github.com/microsoft/vcpkg (HEAD)...
@@ -4561,13 +4385,13 @@ MSBuild version 17.14.60+43b635718 for .NET Framework
     * vcpkg-cmake-config:x64-windows@2024-05-23 -- git+https://github.com/microsoft/vcpkg@97a63e4bc1a17422ffe4eff71da53b4b561a7841
       wil:x64-windows@1.0.250325.1 -- git+https://github.com/microsoft/vcpkg@254977d7ae1b2a2c086359b0df1373c796538f1d
   Additional packages (*) will be modified to complete this operation.
-  Restored 4 package(s) from C:\Users\runneradmin\AppData\Local\vcpkg\archives in 123 ms. Use --debug to see more details.
+  Restored 4 package(s) from C:\Users\runneradmin\AppData\Local\vcpkg\archives in 81.1 ms. Use --debug to see more details.
   Installing 1/5 vcpkg-cmake-config:x64-windows@2024-05-23...
   vcpkg-cmake-config:x64-windows@2024-05-23 package ABI: 5f792bba831db8eceba36ee7a8942785c8be7ea773b31c8defc1682cc2864308
-  Elapsed time to handle vcpkg-cmake-config:x64-windows: 2.7 ms
+  Elapsed time to handle vcpkg-cmake-config:x64-windows: 2.42 ms
   Installing 2/5 vcpkg-cmake:x64-windows@2024-04-23...
   vcpkg-cmake:x64-windows@2024-04-23 package ABI: 3e6a6ea2e9304c22e4acf4b382ddeda4f02b54d9659bd252c044a847af8f56ab
-  Elapsed time to handle vcpkg-cmake:x64-windows: 2.84 ms
+  Elapsed time to handle vcpkg-cmake:x64-windows: 1.98 ms
   Installing 3/5 gtest:x64-windows@1.17.0#2...
   gtest:x64-windows@1.17.0#2 package ABI: 9961bdb3220a20f80dba88e678ee4feff1e44afd3f61a9fe292f07caba1bfa56
   Building gtest:x64-windows@1.17.0#2...
@@ -4609,13 +4433,13 @@ MSBuild version 17.14.60+43b635718 for .NET Framework
   -- Installing: C:/vcpkg/packages/gtest_x64-windows/share/gtest/usage
   -- Performing post-build validation
   Starting submission of gtest:x64-windows@1.17.0#2 to 1 binary cache(s) in the background
-  Elapsed time to handle gtest:x64-windows: 27 s
+  Elapsed time to handle gtest:x64-windows: 21 s
   Installing 4/5 rapidjson:x64-windows@2025-02-26...
   rapidjson:x64-windows@2025-02-26 package ABI: 95ecb0d0edb70b223b853136e1def6352796fe86022fe388b4cc96b1e749eace
-  Elapsed time to handle rapidjson:x64-windows: 9.03 ms
+  Elapsed time to handle rapidjson:x64-windows: 7.08 ms
   Installing 5/5 wil:x64-windows@1.0.250325.1...
   wil:x64-windows@1.0.250325.1 package ABI: c94c1a87b0b0a4423ea99643350543c468cf4f405296794bc8db3123b1fec8d7
-  Elapsed time to handle wil:x64-windows: 8.36 ms
+  Elapsed time to handle wil:x64-windows: 6.94 ms
   Installed contents are licensed to you by owners. Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
   Packages installed in this vcpkg installation declare the following licenses:
   BSD-3-Clause
@@ -4642,8 +4466,8 @@ MSBuild version 17.14.60+43b635718 for .NET Framework
     target_link_libraries(main PRIVATE WIL::WIL)
   
   Waiting for 1 remaining binary cache submissions...
-  Completed submission of gtest:x64-windows@1.17.0#2 to 1 binary cache(s) in 1.6 s (1/1)
-  All requested installations completed successfully in: 27 s
+  Completed submission of gtest:x64-windows@1.17.0#2 to 1 binary cache(s) in 1.4 s (1/1)
+  All requested installations completed successfully in: 21 s
   rapidjsonhelper.cpp
   color.cpp
   numbers.cpp

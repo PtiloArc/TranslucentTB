@@ -1,34 +1,40 @@
-D:\a\TranslucentTB\TranslucentTB\ExplorerHooks\ExplorerHooks.vcxproj(61,5): error : This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is ..\packages\Microsoft.Build.Tasks.Git.8.0.0\build\Microsoft.Build.Tasks.Git.props.
-D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj(99,5): error : This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is ..\packages\Microsoft.Build.Tasks.Git.8.0.0\build\Microsoft.Build.Tasks.Git.props.
-D:\a\TranslucentTB\TranslucentTB\ProgramLog\ProgramLog.vcxproj(55,5): error : This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is ..\packages\Microsoft.Build.Tasks.Git.8.0.0\build\Microsoft.Build.Tasks.Git.props.
-D:\a\TranslucentTB\TranslucentTB\WindowsUdk\WindowsUdk.vcxproj(42,5): error : This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is ..\packages\Microsoft.Windows.CppWinRT.2.0.250303.1\build\native\Microsoft.Windows.CppWinRT.props.
-D:\a\TranslucentTB\TranslucentTB\Xaml\Xaml.vcxproj(463,5): error : This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is ..\packages\Microsoft.Build.Tasks.Git.8.0.0\build\Microsoft.Build.Tasks.Git.props.
-D:\a\TranslucentTB\TranslucentTB\Xaml\Xaml.vcxproj(463,5): error : This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is ..\packages\Microsoft.Build.Tasks.Git.8.0.0\build\Microsoft.Build.Tasks.Git.props.
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(53,6): error C2760: syntax error: 'auto' was unexpected here; expected 'expression' [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(53,6): error C3878: syntax error: unexpected token 'auto' following 'expression' [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(53,94): error C2760: syntax error: ')' was unexpected here; expected ';' [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(53,94): error C3878: syntax error: unexpected token ')' following 'expression-statement' [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(57,11): error C2760: syntax error: ';' was unexpected here; expected '}' [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(56,6): error C2760: syntax error: '{' was unexpected here; expected 'expression' [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(58,6): error C2760: syntax error: '}' was unexpected here; expected ';' [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(61,10): error C2059: syntax error: ';' [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(77,35): error C2065: 'rootGrid': undeclared identifier [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(77,9): error C3861: 'isSameOrAncestor': identifier not found [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(91,3): error C2181: illegal else without matching if [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(91,12): error C2065: 'type_view': undeclared identifier [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(119,2): error C2046: illegal case [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(22,133): error C2317: 'try' block starting on line '22' has no catch handlers [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(122,3): error C2043: illegal break [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(125,2): error C2059: syntax error: 'return' [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(126,1): error C2059: syntax error: '}' [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(126,1): error C2143: syntax error: missing ';' before '}' [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(128,1): error C2143: syntax error: missing ';' before '{' [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\visualtreewatcher.cpp(128,1): error C2447: '{': missing function header (old-style formal list?) [D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Microsoft\DesktopBridge\Microsoft.DesktopBridge.targets(499,5): error MSB4181: The "MSBuild" task returned false but did not log an error. [D:\a\TranslucentTB\TranslucentTB\AppPackage\AppPackage.wapproj]
 ---- last 120 lines ----
-MSBuild version 17.14.60+43b635718 for .NET Framework
-
-D:\a\TranslucentTB\TranslucentTB\ExplorerHooks\ExplorerHooks.vcxproj(61,5): error : This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is ..\packages\Microsoft.Build.Tasks.Git.8.0.0\build\Microsoft.Build.Tasks.Git.props.
-D:\a\TranslucentTB\TranslucentTB\ExplorerTAP\ExplorerTAP.vcxproj(99,5): error : This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is ..\packages\Microsoft.Build.Tasks.Git.8.0.0\build\Microsoft.Build.Tasks.Git.props.
-D:\a\TranslucentTB\TranslucentTB\ProgramLog\ProgramLog.vcxproj(55,5): error : This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is ..\packages\Microsoft.Build.Tasks.Git.8.0.0\build\Microsoft.Build.Tasks.Git.props.
-D:\a\TranslucentTB\TranslucentTB\WindowsUdk\WindowsUdk.vcxproj(42,5): error : This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is ..\packages\Microsoft.Windows.CppWinRT.2.0.250303.1\build\native\Microsoft.Windows.CppWinRT.props.
-D:\a\TranslucentTB\TranslucentTB\Xaml\Xaml.vcxproj(463,5): error : This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is ..\packages\Microsoft.Build.Tasks.Git.8.0.0\build\Microsoft.Build.Tasks.Git.props.
-D:\a\TranslucentTB\TranslucentTB\Xaml\Xaml.vcxproj(463,5): error : This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is ..\packages\Microsoft.Build.Tasks.Git.8.0.0\build\Microsoft.Build.Tasks.Git.props.
----- last 120 lines ----
-  messagewindow.cpp
-  trayicon.cpp
-  uwp.cpp
-  window.cpp
-  windowclass.cpp
-  Generating manifest for D:\a\TranslucentTB\TranslucentTB\x64\Release\Xaml\TranslucentTB.Xaml.winmd
-  Generating lib file for api-ms-win-appmodel-runtime-l1-1-5.def
-     Creating library x64\Release\api-ms-win-appmodel-runtime-l1-1-5.lib and object x64\Release\api-ms-win-appmodel-runtime-l1-1-5.exp
+  Action.cpp
+  RelativeAncestor.cpp
+  StyleResources.cpp
+  XamlTypeInfo.Impl.g.cpp
+  XamlLibMetadataProvider.g.cpp
   Generating code
   Finished generating code
-  TranslucentTB.vcxproj -> D:\a\TranslucentTB\TranslucentTB\x64\Release\TranslucentTB.exe
+  XamlMetaDataProvider.cpp
+  XamlTypeInfo.g.cpp
+     Creating library D:\a\TranslucentTB\TranslucentTB\x64\Release\Xaml\Xaml.lib and object D:\a\TranslucentTB\TranslucentTB\x64\Release\Xaml\Xaml.exp
+  Generating code
+  Finished generating code
   Xaml.vcxproj -> D:\a\TranslucentTB\TranslucentTB\x64\Release\Xaml\Xaml.dll
   Xaml.vcxproj -> D:\a\TranslucentTB\TranslucentTB\x64\Release\Xaml\Xaml.dll
-  AppPackage -> D:\a\TranslucentTB\TranslucentTB\AppPackage\AppPackages\AppPackage_1.0.0.0_x64_Test\AppPackage_1.0.0.0_x64.msix
-  AppPackage -> obj\x64\Release\Symbols\AppPackage_1.0.0.0_x64.appxsym
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Microsoft\DesktopBridge\Microsoft.DesktopBridge.targets(499,5): error MSB4181: The "MSBuild" task returned false but did not log an error. [D:\a\TranslucentTB\TranslucentTB\AppPackage\AppPackage.wapproj]
   Installing vcpkg dependencies to D:\a\TranslucentTB\TranslucentTB\Tests\vcpkg_installed\x64-windows\
   "C:\vcpkg\vcpkg.exe" install  --x-wait-for-lock --triplet "x64-windows" --vcpkg-root "C:\vcpkg\\" "--x-manifest-root=D:\a\TranslucentTB\TranslucentTB\Tests\\" "--x-install-root=D:\a\TranslucentTB\TranslucentTB\Tests\vcpkg_installed\x64-windows\\" 
   Fetching registry information from https://github.com/microsoft/vcpkg (HEAD)...
@@ -41,13 +47,13 @@ D:\a\TranslucentTB\TranslucentTB\Xaml\Xaml.vcxproj(463,5): error : This project 
     * vcpkg-cmake-config:x64-windows@2024-05-23 -- git+https://github.com/microsoft/vcpkg@97a63e4bc1a17422ffe4eff71da53b4b561a7841
       wil:x64-windows@1.0.250325.1 -- git+https://github.com/microsoft/vcpkg@254977d7ae1b2a2c086359b0df1373c796538f1d
   Additional packages (*) will be modified to complete this operation.
-  Restored 4 package(s) from C:\Users\runneradmin\AppData\Local\vcpkg\archives in 123 ms. Use --debug to see more details.
+  Restored 4 package(s) from C:\Users\runneradmin\AppData\Local\vcpkg\archives in 81.1 ms. Use --debug to see more details.
   Installing 1/5 vcpkg-cmake-config:x64-windows@2024-05-23...
   vcpkg-cmake-config:x64-windows@2024-05-23 package ABI: 5f792bba831db8eceba36ee7a8942785c8be7ea773b31c8defc1682cc2864308
-  Elapsed time to handle vcpkg-cmake-config:x64-windows: 2.7 ms
+  Elapsed time to handle vcpkg-cmake-config:x64-windows: 2.42 ms
   Installing 2/5 vcpkg-cmake:x64-windows@2024-04-23...
   vcpkg-cmake:x64-windows@2024-04-23 package ABI: 3e6a6ea2e9304c22e4acf4b382ddeda4f02b54d9659bd252c044a847af8f56ab
-  Elapsed time to handle vcpkg-cmake:x64-windows: 2.84 ms
+  Elapsed time to handle vcpkg-cmake:x64-windows: 1.98 ms
   Installing 3/5 gtest:x64-windows@1.17.0#2...
   gtest:x64-windows@1.17.0#2 package ABI: 9961bdb3220a20f80dba88e678ee4feff1e44afd3f61a9fe292f07caba1bfa56
   Building gtest:x64-windows@1.17.0#2...
@@ -89,13 +95,13 @@ D:\a\TranslucentTB\TranslucentTB\Xaml\Xaml.vcxproj(463,5): error : This project 
   -- Installing: C:/vcpkg/packages/gtest_x64-windows/share/gtest/usage
   -- Performing post-build validation
   Starting submission of gtest:x64-windows@1.17.0#2 to 1 binary cache(s) in the background
-  Elapsed time to handle gtest:x64-windows: 27 s
+  Elapsed time to handle gtest:x64-windows: 21 s
   Installing 4/5 rapidjson:x64-windows@2025-02-26...
   rapidjson:x64-windows@2025-02-26 package ABI: 95ecb0d0edb70b223b853136e1def6352796fe86022fe388b4cc96b1e749eace
-  Elapsed time to handle rapidjson:x64-windows: 9.03 ms
+  Elapsed time to handle rapidjson:x64-windows: 7.08 ms
   Installing 5/5 wil:x64-windows@1.0.250325.1...
   wil:x64-windows@1.0.250325.1 package ABI: c94c1a87b0b0a4423ea99643350543c468cf4f405296794bc8db3123b1fec8d7
-  Elapsed time to handle wil:x64-windows: 8.36 ms
+  Elapsed time to handle wil:x64-windows: 6.94 ms
   Installed contents are licensed to you by owners. Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
   Packages installed in this vcpkg installation declare the following licenses:
   BSD-3-Clause
@@ -122,8 +128,8 @@ D:\a\TranslucentTB\TranslucentTB\Xaml\Xaml.vcxproj(463,5): error : This project 
     target_link_libraries(main PRIVATE WIL::WIL)
   
   Waiting for 1 remaining binary cache submissions...
-  Completed submission of gtest:x64-windows@1.17.0#2 to 1 binary cache(s) in 1.6 s (1/1)
-  All requested installations completed successfully in: 27 s
+  Completed submission of gtest:x64-windows@1.17.0#2 to 1 binary cache(s) in 1.4 s (1/1)
+  All requested installations completed successfully in: 21 s
   rapidjsonhelper.cpp
   color.cpp
   numbers.cpp
